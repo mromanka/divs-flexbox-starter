@@ -97,44 +97,75 @@ textarea {
 
 
 html {
-  background-color: black;
+  background-image: url('../img/ladybug.jpg') ;
+  background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
-  font-size: 1.25em;
+  font-size: 1.1em;
+  color: #000;
+  display: flex;
+  justify-content: center;
   height: 100%;
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
-  background-color: black;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  max-width: 1200px;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+header,
+main,
+footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+header {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+main {
+  font-size: 1.7em;
+  font-weight: 600;
+  padding-right: 30%;
+}
+
+.div-1,
+.div-2,
+.div-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1.1em;
-  background-color: black;
+  line-height: 1.7em;
+  background-color: #476b6b;
   height: 300px;
+  width: 28%;
   padding: 0 2%;
 }
 
-.div-2 {
-  border-left: solid 0.05em grey;
-  border-right: solid 0.05em grey;
+ul.social-icons {
+  float: right;
+  padding-left: 0px;
 }
 
+.social-icons li {
+  display: inline-block;
+  padding-right: 10px;
+}
 
 
 /* ==========================================================================
